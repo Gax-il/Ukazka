@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(135deg, #ff8a00, #e52e71, #9b34ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#karta {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 10px 5px 5px #303030;
+}
+
+
+#inputy {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#inputy input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#inputy input:focus {
+  background-color: #e0e0e0;
+  outline: none;
+  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+#pridat {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff8a00;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pridat:hover {
+  background-color: #e52e71;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#prumerna_znamka {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#prumerna_znamka:before {
+  content: "Průměrná známka: ";
+  font-size: 1rem;
+  color: #666;
+}
+
+#prumerna_znamka:hover {
+  transform: scale(1.05);
+  color: #e52e71;
+}
+
+.znamka-item {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.znamka-item input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 50px;
+}
+
+.znamka-item input:focus {
+  background-color: #e0e0e0;
+  outline: none;
+  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.znamka-item button {
+  border: none;
+  background-color: #ff8a00;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.znamka-item button:hover {
+  background-color: #e52e71;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
